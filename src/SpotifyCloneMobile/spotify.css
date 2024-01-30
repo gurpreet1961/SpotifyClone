@@ -1,0 +1,88 @@
+.player {
+	background-color: black;
+	color: white;
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-radius: 10px;
+}
+.topbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 70px;
+}
+.search {
+	text-align: center;
+}
+.topPara {
+	color: rgb(158, 158, 158);
+}
+.search > p {
+	margin: 0;
+	font-size: 12px;
+}
+img {
+	margin: auto;
+	margin-top: 30px;
+	width: 90%;
+}
+.playPauseIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.playPauseIcon > svg {
+	font-size: 32px;
+}
+.musicName {
+	margin: 20px 0px 0px 10px;
+}
+.musicName > h4 {
+	margin: 0;
+}
+.musicName > p {
+	margin: 0;
+	color: rgb(138, 133, 133);
+	font-size: 12px;
+}
+.progressBar {
+	width: 90%;
+	position: relative;
+}
+
+.bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.progressBar > .dot {
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	left: 0px;
+	top: -4px;
+	right: 0;
+}
+.time {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.time > p {
+	margin: 0;
+	font-size: small;
+}
+.progressBar > span {
+	position: absolute;
+	height: 2px;
+	background-color: #fff;
+}
