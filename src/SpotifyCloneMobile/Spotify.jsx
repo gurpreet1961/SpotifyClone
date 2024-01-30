@@ -8,6 +8,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ShuffleIcon from "@mui/icons-material/Shuffle";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import "./spotify.css";
+import imgpath from "../assets/1200x1200bb.jpg";
 import audioFile from "../assets/Internet(PagalWorlld.Com).mp3";
 const Spotify = () => {
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -20,8 +21,11 @@ const Spotify = () => {
 	useEffect(() => {
 		if (percentMusic < 425 && isPlaying) {
 			setTimeout(() => {
-				setPercentMusic(percentMusic + 1);
+				setPercentMusic(percentMusic + 1.1);
 			}, [1000]);
+		} else if (percentMusic >= 425) {
+			setPercentMusic(0);
+			setIsPlaying(!isPlaying);
 		}
 	}, [percentMusic, isPlaying]);
 	const playMusic = () => {
@@ -43,15 +47,10 @@ const Spotify = () => {
 				</div>
 				<MoreVertIcon />
 			</div>
-			<img
-				src={
-					"https://a10.gaanacdn.com/images/albums/46/1647746/crop_480x480_1647746.jpg"
-				}
-				alt="Music playing"
-			/>
+			<img src={imgpath} width={480} height={480} alt="Music playing" />
 			<div className="musicName">
-				<h4>Hamne Tumko Dil Ye De Diya</h4>
-				<p>Anand Raj Anand, Alka</p>
+				<h4>Internet</h4>
+				<p>Satinder Sartaaj</p>
 			</div>
 
 			<div className="bottom">

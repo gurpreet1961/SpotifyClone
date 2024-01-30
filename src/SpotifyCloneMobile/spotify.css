@@ -10,8 +10,8 @@
 .topbar {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 70px;
+	justify-content: space-between;
+	padding: 0px 20px 0px 20px;
 }
 .search {
 	text-align: center;
